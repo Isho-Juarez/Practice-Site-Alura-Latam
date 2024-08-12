@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-fondo:#000000;
+    --color-texto:#F6F6F6;
+    --color-texto-enfasis:#22D4FD;
+    --color-enlace-hover:#94ebff;
+    --color-boton-hover:#272727;
+
+    --fuente-parrafo:"Montserrat", sans-serif;
+    --fuente-titulo:"Krona One", sans-serif;
+}
+
+
+*{
+    padding: 0%;
+    margin:0%
+}
+
+html{
+    font-size: 12px;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color:var(--color-texto);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 12%;
+}
+
+.menuSuperior{
+    display:flex;
+    gap:8%;
+}
+
+.enlaceHeader{
+    color:var(--color-texto-enfasis);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--fuente-parrafo);
+    text-decoration: none;
+    
+   
+}
+
+.enlaceheader:hover{
+    color:var(--color-enlace-hover);
+}
+
+strong{
+    color:var(--color-texto-enfasis);
+}
+
+.anaGarciaImg{
+    display:block;
+    width: 40%;
+    
+        
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 12%;
+    justify-content: space-between;
+    gap:15%;
+    
+}
+
+.presentacion_contenido{
+    box-sizing: border-box;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+}
+
+.titulo{
+    font-size: 3rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 50;
+     
+
+}
+
+.parrafo{
+    font-size: 2rem;
+    font-family: var(--fuente-parrafo);
+    color: var(--color-texto);
+        
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.enlace{
+    display: flex;
+    width: 50%;
+    
+    color: var(--color-texto);
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border: 2px solid var(--color-texto-enfasis);
+    border-radius: 8px;
+    font-size: 2rem;
+    font-family: var(--fuente-parrafo);
+    font-weight: 600;
+    text-decoration: none;
+    gap: 16px;
+}
+
+
+
+.accedeRedes{
+    font-size: 2rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 400;
+}
+
+.enlace:hover{
+    background-color: var(--color-boton-hover);
+    
+}
+
+.footer{
+    background-color: var(--color-texto-enfasis);
+    padding: 1.5%;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--fuente-parrafo);
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+img{
+    display:block;
+    width: auto;
+    
+    
+}
+
+@media (max-width:1200px){
+    .presentacion_contenido{
+        width: auto;
+    }
+    
+    .presentacion{
+        flex-direction: column-reverse;
+        gap:80px;
+    }
+
+    .anaGarciaImg{
+        display:block;
+        width: 80%;
+    }
+
+    .header{
+        padding: 10%
+    }
+
+    .menuSuperior{
+        justify-content: center;
+    }
+}
+    
